@@ -4,4 +4,4 @@
 ### Subnet ranges /24 for each of them.
 ### Userdata:
 ###	    Wordpress server on Public Subnet
-###	    MySQL server on Private Subnet
+###     MySQL server on Private Subnet
