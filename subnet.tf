@@ -1,4 +1,4 @@
-resource "aws_subnet" "public-aa" {
+resource "aws_subnet" "public-ad" {
   vpc_id     = "${aws_vpc.dev.id}"
   cidr_block = "10.0.1.0/24"
 
@@ -22,7 +22,7 @@ resource "aws_subnet" "public-b" {
   }
 }
 
-resource "aws_subnet" "public-cc" {
+resource "aws_subnet" "public-ce" {
   vpc_id     = "${aws_vpc.dev.id}"
   cidr_block = "10.0.1.0/24"
 
