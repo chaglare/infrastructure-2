@@ -1,9 +1,9 @@
-resource "aws_subnet" "public-a" {
+resource "aws_subnet" "public-aa" {
   vpc_id     = "${aws_vpc.dev.id}"
   cidr_block = "10.0.1.0/24"
 
   tags = {
-      Name = "${var.Name}.public-a"
+      Name = "${var.Name}.public-aa"
       Env = "${var.Env}"
       Created_by = "${var.Created_by}"
       Dept = "${var.Dept}"
@@ -22,12 +22,12 @@ resource "aws_subnet" "public-b" {
   }
 }
 
-resource "aws_subnet" "public-c" {
+resource "aws_subnet" "public-cc" {
   vpc_id     = "${aws_vpc.dev.id}"
   cidr_block = "10.0.1.0/24"
 
   tags = {
-      Name = "${var.Name}.public-c"
+      Name = "${var.Name}.public-cc"
       Env = "${var.Env}"
       Created_by = "${var.Created_by}"
       Dept = "${var.Dept}"
