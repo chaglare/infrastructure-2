@@ -14,7 +14,6 @@ module "wordpress" {
   # Auto scaling group
   asg_name                  = "${var.appname}-asg"
   vpc_zone_identifier       = ["${aws_subnet.public.id}"]
-  count                     = "${var.count}"
   health_check_type         = "EC2"
   min_size                  = "${var.min_app_size}"
   max_size                  = "${var.max_app_size}"
